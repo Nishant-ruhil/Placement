@@ -29,6 +29,7 @@
 
 
 
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -135,9 +136,10 @@
     <div class="site-section">
         <div class="container">
 
-
-            <div class="row justify-content-center">
+          <form action="" class="registration-from">
+            <div class="row justify-content-center" id="step-1">
                 <div class="col-md-5">
+                  <h1>User Details</h1>
                     <div class="row">
                         <div class="col-md-12 form-group">
                             <label for="username">Username</label>
@@ -156,15 +158,100 @@
                             <input type="password" id="pword2" class="form-control form-control-lg">
                         </div>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center" id="step-2">
+                <div class="col-md-5">
                     <div class="row">
-                        <div class="col-12">
-                            <input type="submit" value="Register" class="btn btn-primary btn-lg px-5">
+                      <h1>Education</h1>
+                        <div class="col-md-12 form-group">
+                            <label for="Batch">Batch</label>
+                            <input type="text" id="Batch" class="form-control form-control-lg">
                         </div>
+                        <div class="col-md-12 form-group">
+                            <label for="Course">Course</label>
+                            <input type="text" id="Course" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="Semester">Semester</label>
+                            <input type="text" id="Semester" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="Roll-no">Roll-no</label>
+                            <input type="text" id="Roll-no" class="form-control form-control-lg">
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center" id="step-3">
+                <div class="col-md-5">
+                    <div class="row">
+                        <!-- <div class="col-md-12 form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="pword">Password</label>
+                            <input type="password" id="pword" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="pword2">Re-type Password</label>
+                            <input type="password" id="pword2" class="form-control form-control-lg">
+                        </div> -->
+                        <p>Next2</p>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center" id="step-4">
+                <div class="col-md-5">
+                    <!-- <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="pword">Password</label>
+                            <input type="password" id="pword" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="pword2">Re-type Password</label>
+                            <input type="password" id="pword2" class="form-control form-control-lg">
+                        </div>
+                    </div> -->
+                    <p>Next3</p>
+                    
                 </div>
             </div>
             
 
+            <div class="row justify-content-center" id="step-4">
+              <div class="col-md-5">
+            <div class="row">
+              <div class="col-12">
+                <button id="prevbtn">Previous</button>
+                <button id="nextbtn">Next</button>
+                <button id="submitbtn">Submit</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
           
         </div>
     </div>
@@ -253,6 +340,7 @@
 
 
   <script src="js/main.js"></script>
+  <script src="./jsPages//registration.js"></script>
 
 </body>
 
